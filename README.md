@@ -17,6 +17,12 @@ Open-source desktop apps **rewritten in Rust** — usually lighter than Electron
 |:---:|:---|:---|:---:|
 | <img src="https://raw.githubusercontent.com/crmne/zapfast/main/packaging/icons/zapfast.svg" width="32" height="32" alt=""> | [**ZapFast**](https://github.com/crmne/zapfast) | Native **WhatsApp** desktop client (egui + whatsapp-rust). Companion-device model; ~200 MB idle vs ~1 GB+ for WhatsApp Web in their Linux tests. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/zapfast.md) |
 
+### Platform ([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))
+
+| | Name | Description | |
+|:---:|:---|:---|:---:|
+| <img src="https://raw.githubusercontent.com/storytold/craft-launcher/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.artcraft-launcher.png" width="32" height="32" alt=""> | [**ArtCraft Launcher**](https://github.com/storytold/craft-launcher) | Install, update, and open every **Craft App** from one native Rust launcher (macOS, Windows, Linux, FreeBSD). | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/craft-launcher.md) |
+
 ### Creative — Adobe-style ([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))
 
 | | Name | Description | |
@@ -26,6 +32,7 @@ Open-source desktop apps **rewritten in Rust** — usually lighter than Electron
 | <img src="https://raw.githubusercontent.com/storytold/filmcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.filmcraft.png" width="32" height="32" alt=""> | [**FilmCraft**](https://github.com/storytold/filmcraft) | Clean-room **Premiere Pro**–style NLE — timeline editing, color, sound. macOS, Windows, Linux, WASM. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/filmcraft.md) |
 | <img src="https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.effectcraft.png" width="32" height="32" alt=""> | [**EffectCraft**](https://github.com/storytold/effectcraft) | Clean-room **After Effects**–style compositor — keyframes, effects, 3D cameras, render queue. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/effectcraft.md) |
 | <img src="https://raw.githubusercontent.com/storytold/vectorcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.vectorcraft.png" width="32" height="32" alt=""> | [**VectorCraft**](https://github.com/storytold/vectorcraft) | Clean-room **Illustrator**–style vector illustration — paths, blends, live effects. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/vectorcraft.md) |
+| <img src="https://raw.githubusercontent.com/storytold/designcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.designcraft.png" width="32" height="32" alt=""> | [**DesignCraft**](https://github.com/storytold/designcraft) | Clean-room **InDesign**–style page layout — threaded text, masters, publishing workflow. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/designcraft.md) |
 | <img src="https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.pdfcraft.png" width="32" height="32" alt=""> | [**PdfCraft**](https://github.com/storytold/pdfcraft) | Clean-room **Acrobat**–style PDF workbench — forms, layers, comments, attachments (ISO 32000). | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/pdfcraft.md) |
 
 ### Office — Microsoft-style ([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))
@@ -34,6 +41,13 @@ Open-source desktop apps **rewritten in Rust** — usually lighter than Electron
 |:---:|:---|:---|:---:|
 | <img src="https://raw.githubusercontent.com/storytold/wordcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.wordcraft.png" width="32" height="32" alt=""> | [**WordCraft**](https://github.com/storytold/wordcraft) | Clean-room **Microsoft Word**–style writing — styles, track changes, references, layout. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/wordcraft.md) |
 | <img src="https://raw.githubusercontent.com/storytold/gridcraft/main/assets/app-icon/gridcraft.svg" width="32" height="32" alt=""> | [**GridCraft**](https://github.com/storytold/gridcraft) | Clean-room **Excel**–style spreadsheets — formulas, charts, conditional formatting. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/gridcraft.md) |
+| <img src="https://raw.githubusercontent.com/storytold/deckcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.deckcraft.png" width="32" height="32" alt=""> | [**DeckCraft**](https://github.com/storytold/deckcraft) | Clean-room **PowerPoint**–style presentations and slide shows. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/deckcraft.md) |
+
+### CAD — Autodesk-style ([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))
+
+| | Name | Description | |
+|:---:|:---|:---|:---:|
+| <img src="https://raw.githubusercontent.com/storytold/cadcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.cadcraft.png" width="32" height="32" alt=""> | [**CADCraft**](https://github.com/storytold/cadcraft) | Clean-room **AutoCAD**–style CAD — DWG/DXF, layouts, dimensions, plot to PDF. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/cadcraft.md) |
 
 ---
 

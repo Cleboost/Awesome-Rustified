@@ -1,0 +1,29 @@
+# DeckCraft
+
+[← Back to list](../README.md)
+
+| | |
+|---|---|
+| **Replaces** | Microsoft PowerPoint–style presentations |
+| **Repo** | [github.com/storytold/deckcraft](https://github.com/storytold/deckcraft) |
+| **Site** | [getartcraft.com/apps/deckcraft](https://getartcraft.com/apps/deckcraft) |
+| **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
+| **License** | MIT OR Apache-2.0 |
+| **Platforms** | macOS, Windows, Linux, WebAssembly |
+
+## Summary
+
+DeckCraft is a clean-room presentation app in pure Rust: slides, layouts, and slide-show workflows familiar from PowerPoint — part of the Craft App Suite.
+
+## Stack
+
+- [craft-libs](https://github.com/storytold/craft-libs)
+- Delivered via [ArtCraft Launcher](https://github.com/storytold/craft-launcher)
+
+## Why Rust
+
+Native slide editing and rendering without an Office web stack or Electron shell.
+
+## Notes
+
+Not affiliated with Microsoft.
