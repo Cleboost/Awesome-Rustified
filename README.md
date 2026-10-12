@@ -1,107 +1,107 @@
 # Awesome Rustified
 
-Liste publique d’applications **open source** recodées en **Rust**, souvent pour remplacer des clients **Electron**, **navigateur embarqué**, ou des applis **propriétaires** lourdes — avec le même job, moins de complexité sous le capot.
+A public list of **open source** apps **rewritten in Rust**, often to replace **Electron** clients, **embedded-browser** shells, or heavy **proprietary** desktop apps — same job, less complexity under the hood.
 
-> Projets listés à titre informatif. Marques citées = propriétaires respectifs. Pas d’affiliation.
+> Listed projects are for reference only. Trademarks belong to their owners. No affiliation implied.
 
-## Sommaire
+## Table of contents
 
-- [Comment lire cette liste](#comment-lire-cette-liste)
-- [Modèle d’entrée](#modèle-dentrée)
-- [Musique & streaming](#musique--streaming)
-- [Messagerie](#messagerie)
-- [À classer](#à-classer)
-- [Contribuer](#contribuer)
+- [How to read this list](#how-to-read-this-list)
+- [Entry template](#entry-template)
+- [Music & streaming](#music--streaming)
+- [Messaging](#messaging)
+- [Backlog](#backlog)
+- [Contributing](#contributing)
 
-## Comment lire cette liste
+## How to read this list
 
-| Champ | Signification |
-|--------|----------------|
-| **Remplace / alternative à** | Produit ou type d’app d’origine (souvent fermé ou très lourd) |
-| **Stack** | Bibliothèques / UI Rust notables |
-| **Pourquoi Rust** | Ce qu’on gagne en pratique (RAM, démarrage, pas de Chromium, binaire unique, etc.) |
+| Field | Meaning |
+|--------|---------|
+| **Replaces / alternative to** | Original product or app type (often closed-source or resource-heavy) |
+| **Stack** | Notable Rust libraries / UI toolkit |
+| **Why Rust** | Practical wins (RAM, startup time, no Chromium, single binary, etc.) |
 
-Les entrées sont triées **par catégorie**, pas par « qualité » ou popularité.
+Entries are grouped **by category**, not ranked by quality or popularity.
 
-## Modèle d’entrée
+## Entry template
 
-Quand tu ajoutes une app, copie ce bloc dans la bonne section :
+When you add an app, copy this block into the right section:
 
 ```markdown
-### NomDuProjet
+### ProjectName
 
-- **Remplace / alternative à :** …
-- **Repo :** https://github.com/…
-- **Site :** https://… (optionnel)
-- **Licence :** …
-- **Plateformes :** Linux, macOS, Windows, …
-- **Stack :** …
-- **Pourquoi Rust :** une ou deux phrases, factuelles.
-- **Notes :** prérequis, limites connues, renommage récent, etc. (optionnel)
+- **Replaces / alternative to:** …
+- **Repo:** https://github.com/…
+- **Site:** https://… (optional)
+- **License:** …
+- **Platforms:** Linux, macOS, Windows, …
+- **Stack:** …
+- **Why Rust:** one or two factual sentences.
+- **Notes:** requirements, known limits, recent rename, etc. (optional)
 ```
 
 ---
 
-## Musique & streaming
+## Music & streaming
 
 ### Spotifast
 
-- **Remplace / alternative à :** client desktop **Spotify** (souvent Electron / empreinte mémoire élevée)
-- **Repo :** [crmne/spotifast](https://github.com/crmne/spotifast)
-- **Site :** [spotifast.rocks](https://spotifast.rocks/)
-- **Licence :** MIT
-- **Plateformes :** Linux, macOS, Windows
-- **Stack :** [egui](https://github.com/emilk/egui), [librespot](https://github.com/librespot-org/librespot), [fastframe](https://github.com/crmne/fastframe) (fondation partagée avec ZapFast)
-- **Pourquoi Rust :** client natif, **sans moteur de navigateur** ; démarrage rapide ; usage mémoire typique annoncé autour de **100–250 Mo** (vs souvent **600 Mo–1 Go+** côté app officielle).
-- **Notes :** ex-**Fastpotify** (renommage vers 0.8.0). Lecture via librespot + API Spotify ; Spotify Connect, bibliothèque, contrôles MPRIS sur Linux. Projet indépendant, non affilié à Spotify AB.
+- **Replaces / alternative to:** **Spotify** desktop client (often Electron / high memory use)
+- **Repo:** [crmne/spotifast](https://github.com/crmne/spotifast)
+- **Site:** [spotifast.rocks](https://spotifast.rocks/)
+- **License:** MIT
+- **Platforms:** Linux, macOS, Windows
+- **Stack:** [egui](https://github.com/emilk/egui), [librespot](https://github.com/librespot-org/librespot), [fastframe](https://github.com/crmne/fastframe) (shared foundation with ZapFast)
+- **Why Rust:** native client with **no browser engine**; fast startup; typical memory use around **100–250 MB** (vs often **600 MB–1 GB+** for the official app).
+- **Notes:** formerly **Fastpotify** (renamed around 0.8.0). Playback via librespot + Spotify Web API; Spotify Connect, library, MPRIS on Linux. Independent project; not affiliated with Spotify AB.
 
 ---
 
-## Messagerie
+## Messaging
 
 ### ZapFast
 
-- **Remplace / alternative à :** **WhatsApp Web** / clients desktop type Electron ; pas d’app Linux officielle WhatsApp
-- **Repo :** [crmne/zapfast](https://github.com/crmne/zapfast)
-- **Site :** [zapfast.rocks](https://zapfast.rocks/)
-- **Licence :** MIT
-- **Plateformes :** Linux, macOS, Windows
-- **Stack :** egui, [whatsapp-rust](https://github.com/crmne/whatsapp-rust) (lignée whatsmeow), fastframe
-- **Pourquoi Rust :** binaire unique, **pas de Chromium** ; ouverture rapide ; ~**200 Mo** RAM à l’idle en test publié (vs ~**1,13 Go** pour WhatsApp Web + Chromium sur leur bench Linux).
-- **Notes :** appareil **companion** lié au téléphone (modèle WhatsApp Web). Frère de Spotifast sur la même base fastframe. Projet indépendant, non affilié à WhatsApp / Meta.
+- **Replaces / alternative to:** **WhatsApp Web** / Electron-style desktop wrappers; no official WhatsApp app for Linux
+- **Repo:** [crmne/zapfast](https://github.com/crmne/zapfast)
+- **Site:** [zapfast.rocks](https://zapfast.rocks/)
+- **License:** MIT
+- **Platforms:** Linux, macOS, Windows
+- **Stack:** egui, [whatsapp-rust](https://github.com/crmne/whatsapp-rust) (whatsmeow lineage), fastframe
+- **Why Rust:** single binary, **no Chromium**; opens quickly; ~**200 MB** idle RAM in their published Linux test (vs ~**1.13 GB** for WhatsApp Web + Chromium on the same bench).
+- **Notes:** **companion device** linked to your phone (WhatsApp Web model). Sibling of Spotifast on the same fastframe base. Independent project; not affiliated with WhatsApp / Meta.
 
 ---
 
-## À classer
+## Backlog
 
-Bac à sable pour la suite — déplace chaque entrée dans une section quand tu es sûr de la catégorie.
+Sandbox for upcoming entries — move each row into a section once the category is clear.
 
-| Projet | Remplace (idée) | Repo | Statut liste |
-|--------|------------------|------|----------------|
-| *…* | *…* | *…* | brouillon / validé |
+| Project | Replaces (idea) | Repo | List status |
+|---------|-----------------|------|-------------|
+| *…* | *…* | *…* | draft / ready |
 
-**Catégories prévues** (on ajoute seulement quand il y a au moins une entrée) :
+**Planned categories** (add a section only when it has at least one entry):
 
-- Productivité & bureautique
-- Développement & DevOps
-- Réseaux sociaux & forums
-- Lecture & médias (hors musique)
-- Système & utilitaires desktop
-- Jeux & émulation (clients, pas moteurs de jeu)
-
----
-
-## Contribuer
-
-1. Vérifie que le projet est **open source** sur GitHub (ou forge équivalente) et **écrit principalement en Rust** pour le client desktop / l’app listée.
-2. Ajoute une entrée au format ci-dessus ; une phrase « pourquoi Rust » suffit — pas besoin de marketing.
-3. Si le projet remplace un truc payant ou fermé, dis **quoi** (ex. « client X », pas juste « alternative »).
-4. Ouvre une PR ou un issue avec le lien repo + catégorie proposée.
-
-**On évite :** forks morts sans maintenance, démos sans usage réel, ou réimplémentations qui ne font que wrapper le produit officiel dans un autre shell.
+- Productivity & office
+- Development & DevOps
+- Social & forums
+- Reading & media (non-music)
+- System & desktop utilities
+- Games & emulation (clients, not game engines)
 
 ---
 
-## Licence de cette liste
+## Contributing
 
-Le **contenu** de ce dépôt (texte, structure) : [CC0 1.0](LICENSE) — fais-en ce que tu veux. Chaque projet listé garde **sa** licence.
+1. Confirm the project is **open source** on GitHub (or equivalent) and the **listed desktop client is primarily Rust**.
+2. Add an entry using the template above; one “why Rust” sentence is enough — no marketing fluff.
+3. If it replaces paid or closed software, name **what** (e.g. “the X desktop client”, not just “an alternative”).
+4. Open a PR or issue with the repo link and proposed category.
+
+**We skip:** unmaintained forks, toy demos with no real use, or thin wrappers around the official app in another shell.
+
+---
+
+## License for this list
+
+**Content** in this repo (text, structure): [CC0 1.0](LICENSE) — use it however you like. Each listed project keeps **its own** license.
