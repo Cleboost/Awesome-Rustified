@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | office-microsoft |
-| **Sort** | 3 |
 | **Icon** | https://raw.githubusercontent.com/storytold/deckcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.deckcraft.png |
 | **Name** | DeckCraft |
 | **Repo** | https://github.com/storytold/deckcraft |

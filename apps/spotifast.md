@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | music-audio |
-| **Sort** | 1 |
 | **Icon** | https://raw.githubusercontent.com/crmne/spotifast/main/packaging/icons/spotifast.svg |
 | **Name** | Spotifast |
 | **Repo** | https://github.com/crmne/spotifast |

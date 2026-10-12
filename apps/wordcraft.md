@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | office-microsoft |
-| **Sort** | 1 |
 | **Icon** | https://raw.githubusercontent.com/storytold/wordcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.wordcraft.png |
 | **Name** | WordCraft |
 | **Repo** | https://github.com/storytold/wordcraft |

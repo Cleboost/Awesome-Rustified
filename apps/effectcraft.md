@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | creative-adobe |
-| **Sort** | 4 |
 | **Icon** | https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.effectcraft.png |
 | **Name** | EffectCraft |
 | **Repo** | https://github.com/storytold/effectcraft |

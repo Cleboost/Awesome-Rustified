@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | creative-adobe |
-| **Sort** | 5 |
 | **Icon** | https://raw.githubusercontent.com/storytold/vectorcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.vectorcraft.png |
 | **Name** | VectorCraft |
 | **Repo** | https://github.com/storytold/vectorcraft |

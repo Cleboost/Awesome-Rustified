@@ -19,6 +19,7 @@ FOOTER = GITHUB_DIR / "templates" / "readme_footer.md"
 DETAILS_BADGE = (
     '[![Details](https://img.shields.io/badge/Details-→-555?style=flat)]'
 )
+BACK_LINK = "[← Back to list](../README.md)"
 
 ROW_RE = re.compile(r"^\|\s*\*\*([^*]+)\*\*\s*\|\s*(.+?)\s*\|\s*$")
 IMG_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
@@ -40,6 +41,36 @@ def extract_url(value: str) -> str:
     if value.startswith("http://") or value.startswith("https://"):
         return value
     return value
+
+
+def extract_table_block(text: str) -> str:
+    lines: list[str] = []
+    in_table = False
+    for line in text.splitlines():
+        if line.startswith("| | |"):
+            in_table = True
+        if in_table:
+            if not line.startswith("|"):
+                break
+            lines.append(line)
+    if not lines:
+        raise ValueError("no metadata table found (| **Key** | value |)")
+    return "\n".join(lines)
+
+
+def body_from_summary(text: str) -> str:
+    idx = text.find("## Summary")
+    if idx < 0:
+        raise ValueError("missing ## Summary section")
+    return text[idx:].lstrip("\n")
+
+
+def format_app_page(name: str, table_block: str, body: str) -> str:
+    return f"# {name}\n\n{BACK_LINK}\n\n{table_block}\n\n{body.rstrip()}\n"
+
+
+def sync_app_page(path: Path, name: str, table_block: str, body: str) -> None:
+    path.write_text(format_app_page(name, table_block, body), encoding="utf-8")
 
 
 def parse_metadata_table(text: str) -> dict[str, str]:
@@ -76,10 +107,8 @@ def listing_meta(path: Path, rows: dict[str, str]) -> dict:
     name = rows.get("name") or path.stem
     repo = extract_url(need("repo"))
     description = need("description")
-    sort = int(rows.get("sort") or "100")
     return {
         "category": category,
-        "sort": sort,
         "icon": icon,
         "name": name,
         "repo": repo,
@@ -100,9 +129,9 @@ def load_categories() -> list[dict]:
 
 
 def build_apps_section(apps: list[tuple[str, dict]]) -> str:
-    by_cat: dict[str, list[tuple[int, str, dict]]] = {}
+    by_cat: dict[str, list[tuple[str, dict]]] = {}
     for slug, meta in apps:
-        by_cat.setdefault(meta["category"], []).append((meta["sort"], slug, meta))
+        by_cat.setdefault(meta["category"], []).append((slug, meta))
 
     sections: list[str] = ["## Apps", ""]
     for cat in load_categories():
@@ -110,7 +139,7 @@ def build_apps_section(apps: list[tuple[str, dict]]) -> str:
         entries = by_cat.get(cat_id, [])
         if not entries:
             continue
-        entries.sort(key=lambda x: (x[0], x[1]))
+        entries.sort(key=lambda x: x[1]["name"].casefold())
         title = cat["title"]
         subtitle = cat.get("subtitle", "")
         heading = f"### {title} {subtitle}".rstrip()
@@ -118,7 +147,7 @@ def build_apps_section(apps: list[tuple[str, dict]]) -> str:
         sections.append("")
         sections.append("| | Name | Description | |")
         sections.append("|:---:|:---|:---|:---:|")
-        for _, slug, meta in entries:
+        for slug, meta in entries:
             sections.append(table_row(meta, slug))
         sections.append("")
 
@@ -142,6 +171,9 @@ def main() -> int:
         if meta["category"] not in cat_ids:
             print(f"{path}: unknown category '{meta['category']}'", file=sys.stderr)
             return 1
+        table_block = extract_table_block(text)
+        body = body_from_summary(text)
+        sync_app_page(path, meta["name"], table_block, body)
         apps.append((slug, meta))
 
     intro = INTRO.read_text(encoding="utf-8").rstrip() + "\n\n"

@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | music-audio |
-| **Sort** | 2 |
 | **Icon** | https://raw.githubusercontent.com/storytold/soundcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.soundcraft.png |
 | **Name** | SoundCraft |
 | **Repo** | https://github.com/storytold/soundcraft |

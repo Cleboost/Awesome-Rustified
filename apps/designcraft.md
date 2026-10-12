@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | creative-adobe |
-| **Sort** | 6 |
 | **Icon** | https://raw.githubusercontent.com/storytold/designcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.designcraft.png |
 | **Name** | DesignCraft |
 | **Repo** | https://github.com/storytold/designcraft |

@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | creative-adobe |
-| **Sort** | 7 |
 | **Icon** | https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.pdfcraft.png |
 | **Name** | PdfCraft |
 | **Repo** | https://github.com/storytold/pdfcraft |

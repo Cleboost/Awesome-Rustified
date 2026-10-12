@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | creative-adobe |
-| **Sort** | 3 |
 | **Icon** | https://raw.githubusercontent.com/storytold/filmcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.filmcraft.png |
 | **Name** | FilmCraft |
 | **Repo** | https://github.com/storytold/filmcraft |

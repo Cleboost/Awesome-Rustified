@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | creative-adobe |
-| **Sort** | 2 |
 | **Icon** | https://raw.githubusercontent.com/storytold/lightcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.lightcraft.png |
 | **Name** | LightCraft |
 | **Repo** | https://github.com/storytold/lightcraft |

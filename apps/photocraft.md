@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | creative-adobe |
-| **Sort** | 1 |
 | **Icon** | https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.photocraft.png |
 | **Name** | PhotoCraft |
 | **Repo** | https://github.com/storytold/photocraft |

@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | cad-autodesk |
-| **Sort** | 1 |
 | **Icon** | https://raw.githubusercontent.com/storytold/cadcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.cadcraft.png |
 | **Name** | CADCraft |
 | **Repo** | https://github.com/storytold/cadcraft |

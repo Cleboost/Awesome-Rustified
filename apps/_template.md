@@ -1,11 +1,6 @@
-# ProjectName
-
-[← Back to list](../README.md)
-
 | | |
 |---|---|
 | **Category** | music-audio |
-| **Sort** | 100 |
 | **Icon** | https://example.com/icon.png |
 | **Name** | ProjectName |
 | **Repo** | https://github.com/org/repo |
@@ -17,7 +12,7 @@
 
 Optional row: `| **Suite** | ArtCraft |` (display only).
 
-Run `python3 .github/generate_readme.py` after edits — only **Category**, **Sort**, **Icon**, **Name**, **Repo**, and **Description** feed the root README.
+`python3 .github/generate_readme.py` adds the page title, **Back to list** link, and root README row (**Category**, **Icon**, **Name**, **Repo**, **Description**; A–Z per category).
 
 ## Summary
 

@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | office-microsoft |
-| **Sort** | 2 |
 | **Icon** | https://raw.githubusercontent.com/storytold/gridcraft/main/assets/app-icon/gridcraft.svg |
 | **Name** | GridCraft |
 | **Repo** | https://github.com/storytold/gridcraft |

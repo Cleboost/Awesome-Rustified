@@ -5,7 +5,6 @@
 | | |
 |---|---|
 | **Category** | messaging |
-| **Sort** | 1 |
 | **Icon** | https://raw.githubusercontent.com/crmne/zapfast/main/packaging/icons/zapfast.svg |
 | **Name** | ZapFast |
 | **Repo** | https://github.com/crmne/zapfast |
