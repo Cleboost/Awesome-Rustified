@@ -17,7 +17,7 @@
 
 Optional row: `| **Suite** | ArtCraft |` (display only).
 
-Run `python3 scripts/generate_readme.py` after edits — only **Category**, **Sort**, **Icon**, **Name**, **Repo**, and **Description** feed the root README.
+Run `python3 .github/generate_readme.py` after edits — only **Category**, **Sort**, **Icon**, **Name**, **Repo**, and **Description** feed the root README.
 
 ## Summary
 

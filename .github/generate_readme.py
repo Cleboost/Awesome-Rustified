@@ -8,12 +8,13 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+GITHUB_DIR = Path(__file__).resolve().parent
+ROOT = GITHUB_DIR.parent
 APPS_DIR = ROOT / "apps"
-DATA_DIR = ROOT / "data"
 README = ROOT / "README.md"
-INTRO = ROOT / "templates" / "readme_intro.md"
-FOOTER = ROOT / "templates" / "readme_footer.md"
+CATEGORIES = GITHUB_DIR / "data" / "categories.json"
+INTRO = GITHUB_DIR / "templates" / "readme_intro.md"
+FOOTER = GITHUB_DIR / "templates" / "readme_footer.md"
 
 DETAILS_BADGE = (
     '[![Details](https://img.shields.io/badge/Details-→-555?style=flat)]'
@@ -94,16 +95,17 @@ def table_row(meta: dict, slug: str) -> str:
     )
 
 
+def load_categories() -> list[dict]:
+    return json.loads(CATEGORIES.read_text(encoding="utf-8"))["categories"]
+
+
 def build_apps_section(apps: list[tuple[str, dict]]) -> str:
-    categories = json.loads((DATA_DIR / "categories.json").read_text(encoding="utf-8"))[
-        "categories"
-    ]
     by_cat: dict[str, list[tuple[int, str, dict]]] = {}
     for slug, meta in apps:
         by_cat.setdefault(meta["category"], []).append((meta["sort"], slug, meta))
 
     sections: list[str] = ["## Apps", ""]
-    for cat in categories:
+    for cat in load_categories():
         cat_id = cat["id"]
         entries = by_cat.get(cat_id, [])
         if not entries:
@@ -124,15 +126,8 @@ def build_apps_section(apps: list[tuple[str, dict]]) -> str:
 
 
 def main() -> int:
-    cat_ids = {
-        c["id"]
-        for c in json.loads(
-            (DATA_DIR / "categories.json").read_text(encoding="utf-8")
-        )["categories"]
-    }
-    app_files = sorted(
-        p for p in APPS_DIR.glob("*.md") if p.name != "_template.md"
-    )
+    cat_ids = {c["id"] for c in load_categories()}
+    app_files = sorted(p for p in APPS_DIR.glob("*.md") if p.name != "_template.md")
     apps: list[tuple[str, dict]] = []
 
     for path in app_files:

@@ -5,15 +5,15 @@ on:
     branches: [main]
     paths:
       - "apps/**"
-      - "templates/**"
-      - "data/categories.json"
-      - "scripts/generate_readme.py"
+      - ".github/generate_readme.py"
+      - ".github/data/**"
+      - ".github/templates/**"
   pull_request:
     paths:
       - "apps/**"
-      - "templates/**"
-      - "data/categories.json"
-      - "scripts/generate_readme.py"
+      - ".github/generate_readme.py"
+      - ".github/data/**"
+      - ".github/templates/**"
 
 permissions:
   contents: write
@@ -36,7 +36,7 @@ jobs:
           python-version: "3.12"
 
       - name: Regenerate README
-        run: python3 scripts/generate_readme.py
+        run: python3 .github/generate_readme.py
 
       - name: Commit and push README
         if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
