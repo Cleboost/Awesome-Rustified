@@ -1,0 +1,56 @@
+name: readme
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/**"
+      - "templates/**"
+      - "data/categories.json"
+      - "scripts/generate_readme.py"
+  pull_request:
+    paths:
+      - "apps/**"
+      - "templates/**"
+      - "data/categories.json"
+      - "scripts/generate_readme.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate README
+        run: python3 scripts/generate_readme.py
+
+      - name: Commit and push README
+        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "README already up to date."
+            exit 0
+          fi
+          git commit -m "docs: regenerate README"
+          git push origin "HEAD:${{ github.head_ref || github.ref_name }}"
+
+      - name: Require up-to-date README (fork PR)
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork
+        run: git diff --exit-code README.md

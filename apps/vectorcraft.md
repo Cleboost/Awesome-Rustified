@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | creative-adobe |
+| **Sort** | 5 |
+| **Icon** | https://raw.githubusercontent.com/storytold/vectorcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.vectorcraft.png |
+| **Name** | VectorCraft |
+| **Repo** | https://github.com/storytold/vectorcraft |
+| **Description** | Clean-room **Illustrator**–style vector illustration — paths, blends, live effects. |
 | **Replaces** | Adobe Illustrator–style vector illustration |
-| **Repo** | [github.com/storytold/vectorcraft](https://github.com/storytold/vectorcraft) |
 | **Site** | [getartcraft.com/apps/vectorcraft](https://getartcraft.com/apps/vectorcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

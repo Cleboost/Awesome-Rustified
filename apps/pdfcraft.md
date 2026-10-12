@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | creative-adobe |
+| **Sort** | 7 |
+| **Icon** | https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.pdfcraft.png |
+| **Name** | PdfCraft |
+| **Repo** | https://github.com/storytold/pdfcraft |
+| **Description** | Clean-room **Acrobat**–style PDF workbench — forms, layers, comments, attachments (ISO 32000). |
 | **Replaces** | Adobe Acrobat–style PDF reading and editing |
-| **Repo** | [github.com/storytold/pdfcraft](https://github.com/storytold/pdfcraft) |
 | **Site** | [getartcraft.com/apps/pdfcraft](https://getartcraft.com/apps/pdfcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

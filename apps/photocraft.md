@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | creative-adobe |
+| **Sort** | 1 |
+| **Icon** | https://raw.githubusercontent.com/storytold/photocraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.photocraft.png |
+| **Name** | PhotoCraft |
+| **Repo** | https://github.com/storytold/photocraft |
+| **Description** | Clean-room **Photoshop**–style editor — layers, masks, adjustment layers, brushes, PSD. Native + WebAssembly. |
 | **Replaces** | Adobe Photoshop–style raster editing |
-| **Repo** | [github.com/storytold/photocraft](https://github.com/storytold/photocraft) |
 | **Site** | [getartcraft.com/apps/photocraft](https://getartcraft.com/apps/photocraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

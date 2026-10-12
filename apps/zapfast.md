@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
-| **Replaces** | WhatsApp Web / Electron wrappers (no official Linux app) |
-| **Repo** | [github.com/crmne/zapfast](https://github.com/crmne/zapfast) |
+| **Category** | messaging |
+| **Sort** | 1 |
+| **Icon** | https://raw.githubusercontent.com/crmne/zapfast/main/packaging/icons/zapfast.svg |
+| **Name** | ZapFast |
+| **Repo** | https://github.com/crmne/zapfast |
+| **Description** | Native **WhatsApp** desktop client (egui + whatsapp-rust). Companion-device model; ~200 MB idle vs ~1 GB+ for WhatsApp Web in their Linux tests. |
+| **Replaces** | WhatsApp Web / Electron-style desktop wrappers |
 | **Site** | [zapfast.rocks](https://zapfast.rocks/) |
 | **License** | MIT |
 | **Platforms** | Linux, macOS, Windows |

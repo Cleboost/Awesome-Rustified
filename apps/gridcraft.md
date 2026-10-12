@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | office-microsoft |
+| **Sort** | 2 |
+| **Icon** | https://raw.githubusercontent.com/storytold/gridcraft/main/assets/app-icon/gridcraft.svg |
+| **Name** | GridCraft |
+| **Repo** | https://github.com/storytold/gridcraft |
+| **Description** | Clean-room **Excel**–style spreadsheets — formulas, charts, conditional formatting. |
 | **Replaces** | Microsoft Excel–style spreadsheets |
-| **Repo** | [github.com/storytold/gridcraft](https://github.com/storytold/gridcraft) |
 | **Site** | [getartcraft.com/apps/gridcraft](https://getartcraft.com/apps/gridcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

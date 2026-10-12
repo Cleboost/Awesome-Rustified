@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | cad-autodesk |
+| **Sort** | 1 |
+| **Icon** | https://raw.githubusercontent.com/storytold/cadcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.cadcraft.png |
+| **Name** | CADCraft |
+| **Repo** | https://github.com/storytold/cadcraft |
+| **Description** | Clean-room **AutoCAD**–style CAD — DWG/DXF, layouts, dimensions, plot to PDF. |
 | **Replaces** | Autodesk AutoCAD–style CAD and drafting |
-| **Repo** | [github.com/storytold/cadcraft](https://github.com/storytold/cadcraft) |
 | **Site** | [getartcraft.com/apps/cadcraft](https://getartcraft.com/apps/cadcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

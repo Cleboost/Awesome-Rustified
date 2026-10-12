@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | office-microsoft |
+| **Sort** | 3 |
+| **Icon** | https://raw.githubusercontent.com/storytold/deckcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.deckcraft.png |
+| **Name** | DeckCraft |
+| **Repo** | https://github.com/storytold/deckcraft |
+| **Description** | Clean-room **PowerPoint**–style presentations and slide shows. |
 | **Replaces** | Microsoft PowerPoint–style presentations |
-| **Repo** | [github.com/storytold/deckcraft](https://github.com/storytold/deckcraft) |
 | **Site** | [getartcraft.com/apps/deckcraft](https://getartcraft.com/apps/deckcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

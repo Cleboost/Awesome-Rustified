@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | creative-adobe |
+| **Sort** | 3 |
+| **Icon** | https://raw.githubusercontent.com/storytold/filmcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.filmcraft.png |
+| **Name** | FilmCraft |
+| **Repo** | https://github.com/storytold/filmcraft |
+| **Description** | Clean-room **Premiere Pro**–style NLE — timeline editing, color, sound. macOS, Windows, Linux, WASM. |
 | **Replaces** | Adobe Premiere Pro–style nonlinear video editing |
-| **Repo** | [github.com/storytold/filmcraft](https://github.com/storytold/filmcraft) |
 | **Site** | [getartcraft.com/apps/filmcraft](https://getartcraft.com/apps/filmcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | music-audio |
+| **Sort** | 1 |
+| **Icon** | https://raw.githubusercontent.com/crmne/spotifast/main/packaging/icons/spotifast.svg |
+| **Name** | Spotifast |
+| **Repo** | https://github.com/crmne/spotifast |
+| **Description** | Native **Spotify** client (egui + librespot). No Chromium; ~100–250 MB RAM, sub-second startup. Linux, macOS, Windows. |
 | **Replaces** | Spotify desktop client (often Electron) |
-| **Repo** | [github.com/crmne/spotifast](https://github.com/crmne/spotifast) |
 | **Site** | [spotifast.rocks](https://spotifast.rocks/) |
 | **License** | MIT |
 | **Platforms** | Linux, macOS, Windows |

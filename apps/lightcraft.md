@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | creative-adobe |
+| **Sort** | 2 |
+| **Icon** | https://raw.githubusercontent.com/storytold/lightcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.lightcraft.png |
+| **Name** | LightCraft |
+| **Repo** | https://github.com/storytold/lightcraft |
+| **Description** | Clean-room **Lightroom**–style library and raw development. Desktop + WASM; MCP server for agent workflows. |
 | **Replaces** | Adobe Lightroom–style library and raw development |
-| **Repo** | [github.com/storytold/lightcraft](https://github.com/storytold/lightcraft) |
 | **Site** | [getartcraft.com/apps/lightcraft](https://getartcraft.com/apps/lightcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

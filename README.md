@@ -17,12 +17,6 @@ Open-source desktop apps **rewritten in Rust** — usually lighter than Electron
 |:---:|:---|:---|:---:|
 | <img src="https://raw.githubusercontent.com/crmne/zapfast/main/packaging/icons/zapfast.svg" width="32" height="32" alt=""> | [**ZapFast**](https://github.com/crmne/zapfast) | Native **WhatsApp** desktop client (egui + whatsapp-rust). Companion-device model; ~200 MB idle vs ~1 GB+ for WhatsApp Web in their Linux tests. | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/zapfast.md) |
 
-### Platform ([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))
-
-| | Name | Description | |
-|:---:|:---|:---|:---:|
-| <img src="https://raw.githubusercontent.com/storytold/craft-launcher/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.artcraft-launcher.png" width="32" height="32" alt=""> | [**ArtCraft Launcher**](https://github.com/storytold/craft-launcher) | Install, update, and open every **Craft App** from one native Rust launcher (macOS, Windows, Linux, FreeBSD). | [![Details](https://img.shields.io/badge/Details-→-555?style=flat)](apps/craft-launcher.md) |
-
 ### Creative — Adobe-style ([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))
 
 | | Name | Description | |
@@ -51,4 +45,4 @@ Open-source desktop apps **rewritten in Rust** — usually lighter than Electron
 
 ---
 
-**Add an app:** new table row + `apps/<slug>.md` (see [`apps/_template.md`](apps/_template.md)). Install several Craft apps via [ArtCraft Launcher](https://github.com/storytold/craft-launcher). List content: [CC0](LICENSE).
+**Add an app:** copy [`apps/_template.md`](apps/_template.md) and fill the table at the top. CI regenerates this README on push/PR (or run `python3 scripts/generate_readme.py` locally). List content: [CC0](LICENSE).

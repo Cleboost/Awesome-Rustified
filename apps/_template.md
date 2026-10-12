@@ -4,25 +4,33 @@
 
 | | |
 |---|---|
-| **Replaces** | Official product or workflow (be specific) |
+| **Category** | music-audio |
+| **Sort** | 100 |
+| **Icon** | https://example.com/icon.png |
+| **Name** | ProjectName |
 | **Repo** | https://github.com/org/repo |
-| **Site** | … (optional) |
-| **License** | … |
-| **Platforms** | Linux, macOS, Windows, … |
+| **Description** | One line for the main README table (markdown OK). |
+| **Replaces** | What this app replaces |
+| **Site** | [example.com](https://example.com/) |
+| **License** | MIT |
+| **Platforms** | Linux, macOS, Windows |
+
+Optional row: `| **Suite** | ArtCraft |` (display only).
+
+Run `python3 scripts/generate_readme.py` after edits — only **Category**, **Sort**, **Icon**, **Name**, **Repo**, and **Description** feed the root README.
 
 ## Summary
 
-One short paragraph: what it does, who it’s for, maturity if relevant (alpha, etc.).
+…
 
 ## Stack
 
-- UI / audio / protocol libraries worth naming
-- Shared suite (e.g. [ArtCraft](https://getartcraft.com/), [craft-libs](https://github.com/storytold/craft-libs)) if applicable
+…
 
 ## Why Rust
 
-Concrete wins: native binary, memory, no Electron/Chromium, WASM target, etc.
+…
 
 ## Notes
 
-Limits, clean-room disclaimer, trademark line, install hint ([craft-launcher](https://github.com/storytold/craft-launcher) for Craft apps).
+…

@@ -1,0 +1,7 @@
+{
+  "name": "awesome-rustified",
+  "private": true,
+  "scripts": {
+    "generate": "python3 scripts/generate_readme.py"
+  }
+}

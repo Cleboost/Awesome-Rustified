@@ -1,0 +1,27 @@
+{
+  "categories": [
+    {
+      "id": "music-audio",
+      "title": "Music & audio"
+    },
+    {
+      "id": "messaging",
+      "title": "Messaging"
+    },
+    {
+      "id": "creative-adobe",
+      "title": "Creative — Adobe-style",
+      "subtitle": "([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))"
+    },
+    {
+      "id": "office-microsoft",
+      "title": "Office — Microsoft-style",
+      "subtitle": "([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))"
+    },
+    {
+      "id": "cad-autodesk",
+      "title": "CAD — Autodesk-style",
+      "subtitle": "([ArtCraft](https://getartcraft.com/) / [storytold](https://github.com/storytold))"
+    }
+  ]
+}

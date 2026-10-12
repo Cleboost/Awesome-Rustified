@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | creative-adobe |
+| **Sort** | 4 |
+| **Icon** | https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.effectcraft.png |
+| **Name** | EffectCraft |
+| **Repo** | https://github.com/storytold/effectcraft |
+| **Description** | Clean-room **After Effects**–style compositor — keyframes, effects, 3D cameras, render queue. |
 | **Replaces** | Adobe After Effects–style motion graphics and compositing |
-| **Repo** | [github.com/storytold/effectcraft](https://github.com/storytold/effectcraft) |
 | **Site** | [getartcraft.com/apps/effectcraft](https://getartcraft.com/apps/effectcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |

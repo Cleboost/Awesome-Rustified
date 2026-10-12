@@ -4,8 +4,13 @@
 
 | | |
 |---|---|
+| **Category** | music-audio |
+| **Sort** | 2 |
+| **Icon** | https://raw.githubusercontent.com/storytold/soundcraft/main/assets/app-icon/hicolor/128x128/apps/ai.storyteller.soundcraft.png |
+| **Name** | SoundCraft |
+| **Repo** | https://github.com/storytold/soundcraft |
+| **Description** | Clean-room **Pro Tools**–style DAW in pure Rust — multitrack record, edit, mix, MIDI, automation. macOS, Windows, Linux, WebAssembly. |
 | **Replaces** | Avid Pro Tools–style recording, editing, and mixing |
-| **Repo** | [github.com/storytold/soundcraft](https://github.com/storytold/soundcraft) |
 | **Site** | [getartcraft.com/apps/soundcraft](https://getartcraft.com/apps/soundcraft) |
 | **Suite** | [ArtCraft](https://getartcraft.com/) · [storytold](https://github.com/storytold) |
 | **License** | MIT OR Apache-2.0 |
